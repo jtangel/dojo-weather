@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- nav bar -->
+    <div class="nav-bar">
+        <h1>DojoWeather</h1>
+        <div class="locations">
+            <ul>
+                <li onclick="alert('Loading weather report...')">Burbank</li>
+                <li onclick="alert('Loading weather report...')">Chicago</li>
+                <li onclick="alert('Loading weather report...')">Dallas</li>
+            </ul>
+        </div>
+    </div>
+    <!-- end nav bar -->
+
+    <!-- Main Header -->
+
+    <div class="main-header">
+        <h1>San Jose</h1>
+        <p>show temperature in 
+            <select name="temp" id="tempChoice" onchange="convert(this)">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </p>
+    </div>
+    <!-- end main header -->
+    
+    <!-- main container -->
+    <div class="main-container">
+        <div class="temp-cards">
+            <h1 class="main-h1">Today</h1>
+            <img class="main-img" src="./assets/some_rain.png" alt="rain cloud">
+            <p class="main-p">some rain</p>
+            <div class="temps">
+                <h3 class="tempHighs" id="temp1">24</h3>
+                <h3 class="tempLows" id="temp2">18</h3>
+            </div>
+        </div>
+        <div class="temp-cards">
+            <h1 class="main-h1">Tomorrow</h1>
+            <img class="main-img" src="./assets/some_sun.png" alt="sun">
+            <p class="main-p">some sun</p>
+            <div class="temps">
+                <h3 class="tempHighs" id="temp3">27</h3>
+                <h3 class="tempLows" id="temp4">19</h3>
+            </div>
+        </div>
+        <div class="temp-cards">
+            <h1 class="main-h1">Friday</h1>
+            <img class="main-img" src="./assets/some_clouds.png" alt="clouds">
+            <p class="main-p">some clouds</p>
+            <div class="temps">
+                <h3 class="tempHighs" id="temp5">21</h3>
+                <h3 class="tempLows" id="temp6">16</h3>
+            </div>
+        </div>
+        <div class="temp-cards">
+            <h1 class="main-h1">Saturday</h1>
+            <img class="main-img" src="./assets/some_sun.png" alt="sun">
+            <p class="main-p">some sun</p>
+            <div class="temps">
+                <h3 class="tempHighs" id="temp7">26</h3>
+                <h3 class="tempLows" id="temp8">21</h3>
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+
+    <!-- cookie alert -->
+    <div class="cookieAlert">
+        <div class="cookie-img">
+            <img src="./assets/cookie.png" alt="cookie icon">
+        </div>
+        <div class="cookie-message">
+            <h1>Stop! Cookie time</h1>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features, and to analyze our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <div class="cookie-button">
+            <button onclick="removeCookies()">I Accept</button>
+        </div>
+    </div>
+
+    <!-- end cookie alert -->
+
+
+<script src="script.js"></script>
+</body>
+</html>
